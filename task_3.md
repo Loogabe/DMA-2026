@@ -825,7 +825,6 @@ tags: [android, manifest, xml, permissions, intent-filter, security]
 
 9. **Защита от скриншотов и превью:** Объясните, какие настройки манифеста влияют на превью экрана в списке задач и как они соотносятся с программным флагом `FLAG_SECURE`.
 
-```xml
 Настройки манифеста, влияющие на превью в Recents:
 
 - android:excludeFromRecents="true" — полностью убирает из списка.
@@ -833,7 +832,6 @@ tags: [android, manifest, xml, permissions, intent-filter, security]
 - android:noHistory="true" — экран не сохраняется в стеке.
 
 Программный флаг WindowManager.LayoutParams.FLAG_SECURE блокирует скриншоты и превью. В манифесте прямого аналога нет — только через код.
-```
 
 10. **Кастомный класс TestInstrumentationRunner:** Задекларируйте тег `<instrumentation>` для запуска кастомного раннера UI-тестов.
 
